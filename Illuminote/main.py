@@ -2,11 +2,7 @@
 from os import path
 import sys
 
-# Test: just show a fretboard from the Fretboard sources - which aren't really an API...
-#sys.path.append(path.abspath('../Modules'))
-
-# TODO: the git-backed requirements: how do you import them after pip install? can't seem to find this online
-#sys.path.append(path.abspath('../src'))
+# Test: just show a fretboard from my fork of Fretboard, now packaged.
 
 from fretboard import Fretboard
 from fretboard import Tunings
