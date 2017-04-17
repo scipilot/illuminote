@@ -1,0 +1,9 @@
+# https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
+#
+# $ pip install -r Illuminote/Requirements.txt
+
+
+# editable install of my fork of Fretboard, modified to make it more libraryish
+-e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=Fretboard
+
+# TODO
