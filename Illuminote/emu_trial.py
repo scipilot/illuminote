@@ -27,14 +27,14 @@ for c in [BicolorMatrix8x8.RED, BicolorMatrix8x8.GREEN, BicolorMatrix8x8.YELLOW]
             logging.debug("Clearing display...")
             display.clear()
             # Set pixel at position i, j to appropriate color.
-            logging.debug("Clearing setting pixel...")
+            logging.debug("Setting pixel...")
             display.set_pixel(x, y, c)
             # Write the display buffer to the hardware.  This must be called to
             # update the actual display LEDs.
             logging.debug("Writing display...")
             display.write_display()
             # Delay for a quarter second.
-            time.sleep(0.025)
+            # time.sleep(0.025)
 
 
 
@@ -44,6 +44,7 @@ From looking at the output:
 - During the loop above, nothing happens in the bus until write_display is called. 
 - This triggers 16 calls to Device.write8 / AsciiBus:write_byte_data
 - This means the emulator would have to update the output display per-pixel change (there is no "frame")
+- Also means I'm not capturing the "clear" signal, so we have to process R=R, then 0+G = G, R+G=Y (i.e. don't "remember" G)  
 - all are 0's except:
 DEBUG:root:Setting colour 2 (RED?)
 DEBUG:root:Setting X,Y=0,0
