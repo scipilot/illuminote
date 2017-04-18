@@ -22,16 +22,16 @@ for c in [BicolorMatrix8x8.RED, BicolorMatrix8x8.GREEN, BicolorMatrix8x8.YELLOW]
     # Iterate through all positions x and y.
     for x in range(8):
         for y in range(8):
-            logging.debug("Setting X,Y={0},{1}".format(x,y))
+            # logging.debug("Setting X,Y={0},{1}".format(x,y))
             # Clear the display buffer.
-            logging.debug("Clearing display...")
-            display.clear()
+            # logging.debug("Clearing display...")
+            # display.clear()
             # Set pixel at position i, j to appropriate color.
-            logging.debug("Setting pixel...")
+            # logging.debug("Setting pixel...")
             display.set_pixel(x, y, c)
             # Write the display buffer to the hardware.  This must be called to
             # update the actual display LEDs.
-            logging.debug("Writing display...")
+            # logging.debug("Writing display...")
             display.write_display()
             # Delay for a quarter second.
             # time.sleep(0.025)
