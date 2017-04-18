@@ -1,9 +1,20 @@
 # https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
 #
-# $ pip install -r Illuminote/Requirements.txt
-
+#  $ pip install -r Illuminote/Requirements.txt
+#
+# Install pip3 (pip for python3)
+# curl https://bootstrap.pypa.io/get-pip.py | python3
+# pip3 install package-name
 
 # editable install of my fork of Fretboard, modified to make it more libraryish
--e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=Fretboard
+-e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
+-e git+ssh://git@github.com/scipilot/IC2_Emu@master#egg=ic2_emu
 
-# TODO
+# Adafruit-LED-Backpack requires Adafruit-Python-GPIO, but that seems to want to include spidev even though it's detecting "darwin"
+# It works in pip3!
+Adafruit-LED-Backpack
+
+#git+ssh://git@github.com:adafruit/Adafruit_Python_GPIO.git
+
+# https://github.com/foutaise/texttable/
+texttable
