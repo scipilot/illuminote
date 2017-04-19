@@ -8,7 +8,7 @@
 
 # editable install of my fork of Fretboard, modified to make it more libraryish
 -e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
--e git+ssh://git@github.com/scipilot/IC2_Emu@master#egg=ic2_emu
+-e git+ssh://git@github.com/scipilot/I2C_Emu@master#egg=i2c_emu
 
 # Adafruit-LED-Backpack requires Adafruit-Python-GPIO, but that seems to want to include spidev even though it's detecting "darwin"
 # It works in pip3!
