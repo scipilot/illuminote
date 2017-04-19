@@ -34,7 +34,7 @@ for c in [BicolorMatrix8x8.RED, BicolorMatrix8x8.GREEN, BicolorMatrix8x8.YELLOW]
             # logging.debug("Writing display...")
             display.write_display()
             # Delay for a quarter second.
-            # time.sleep(0.025)
+            time.sleep(0.025)
 
 
 
