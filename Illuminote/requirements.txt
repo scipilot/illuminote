@@ -7,8 +7,8 @@
 # pip3 install package-name
 
 # For Production
-https://github.com/scipilot/Fretboard@develop#egg=fretboard
-https://github.com/scipilot/I2C_Emu@master#egg=i2c_emu
+https://github.com/scipilot/Fretboard.git#egg=fretboard
+https://github.com/scipilot/I2C_Emu.git#egg=i2c_emu
 
 # For development: editable install of my fork of Fretboard, modified to make it more libraryish
 #-e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
