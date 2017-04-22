@@ -14,7 +14,7 @@ git+https://github.com/scipilot/I2C_Emu#egg=i2c_emu
 #-e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
 #-e git+ssh://git@github.com/scipilot/I2C_Emu@master#egg=i2c_emu
 
-# Adafruit-LED-Backpack requires Adafruit-Python-GPIO, but that seems to want to include spidev even though it's detecting "darwin"
+# Adafruit-LED-Backpack requires Adafruit-Python-GPIO, but that seems to want to include spidev on MACOSX even though it's detecting "darwin"
 # It works in pip3!
 Adafruit-LED-Backpack
 
@@ -22,3 +22,5 @@ Adafruit-LED-Backpack
 
 # https://github.com/foutaise/texttable/
 texttable
+
+Pillow
