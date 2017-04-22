@@ -6,9 +6,13 @@
 # curl https://bootstrap.pypa.io/get-pip.py | python3
 # pip3 install package-name
 
-# editable install of my fork of Fretboard, modified to make it more libraryish
--e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
--e git+ssh://git@github.com/scipilot/I2C_Emu@master#egg=i2c_emu
+# For Production
+https://github.com/scipilot/Fretboard@develop#egg=fretboard
+https://github.com/scipilot/I2C_Emu@master#egg=i2c_emu
+
+# For development: editable install of my fork of Fretboard, modified to make it more libraryish
+#-e git+ssh://git@github.com/scipilot/Fretboard@develop#egg=fretboard
+#-e git+ssh://git@github.com/scipilot/I2C_Emu@master#egg=i2c_emu
 
 # Adafruit-LED-Backpack requires Adafruit-Python-GPIO, but that seems to want to include spidev even though it's detecting "darwin"
 # It works in pip3!
