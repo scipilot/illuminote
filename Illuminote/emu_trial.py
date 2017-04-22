@@ -10,6 +10,7 @@ logging.basicConfig(filename='debug.log',level=logging.DEBUG,filemode='w')
 
 # Inject our ic2 emulation in
 # Create display instance on default I2C address (0x70) and bus number.
+# note: you could pass in an i2c_interface() which returns a Device?
 display = BicolorMatrix8x8.BicolorMatrix8x8(address=0x70, busnum=0, i2c=i2c_emu)
 
 # Initialize the display. Must be called once before using the display.
